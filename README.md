@@ -10,7 +10,7 @@ Este projeto traz um **Jogo da Velha** (também conhecido como **Tic Tac Toe**) 
 2. [Estrutura do Projeto](#estrutura-do-projeto)  
 3. [Instalação e Execução](#instalação-e-execução)  
 4. [Como Jogar](#como-jogar)  
-5. [Entendendo o Minimax (Explicação Divertida)](#entendendo-o-minimax-explicação-divertida)  
+5. [Entendendo o Minimax](#entendendo-o-minimax)  
 6. [Imagens e Demonstrações](#imagens-e-demonstrações)  
 7. [Possíveis Melhorias](#possíveis-melhorias)  
 8. [Licença](#licença)
@@ -146,15 +146,16 @@ No final, o computador escolhe a jogada que o leva ao melhor desfecho para ele, 
 ### Fluxo Simplificado do Minimax
 
 
+```mermaid
 flowchart LR
     A((Início)) --> B[Tabuleiro atual]
     B --> C{É Terminal?\nAlguém ganhou ou não há espaços?}
-    C -->|Sim| D[Retorna pontuação (+1, -1 ou 0)]
+    C -->|Sim| D["Retorna pontuação (+1, -1 ou 0)"]
     C -->|Não| E[Gerar jogadas possíveis]
     E --> F[Simular cada jogada e chamar recursivamente]
     F --> G[(Retorna o melhor resultado)]
     G --> H((Fim))
-
+```
 > **Terminal** significa que o jogo acabou: ou alguém venceu, ou deu empate.
 
 ---
