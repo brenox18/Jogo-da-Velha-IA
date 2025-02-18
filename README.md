@@ -163,8 +163,7 @@ flowchart LR
 ## Imagens e Demonstrações
 
 1. **Partida em andamento**  
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/nYb2NjOzD5A" frameborder="0" allowfullscreen></iframe>
-
+    "https://www.youtube.com/embed/nYb2NjOzD5A"
 
 
 
