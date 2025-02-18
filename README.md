@@ -145,7 +145,7 @@ No final, o computador escolhe a jogada que o leva ao melhor desfecho para ele, 
 
 ### Fluxo Simplificado do Minimax
 
-```mermaid
+
 flowchart LR
     A((Início)) --> B[Tabuleiro atual]
     B --> C{É Terminal?\nAlguém ganhou ou não há espaços?}
@@ -154,7 +154,6 @@ flowchart LR
     E --> F[Simular cada jogada e chamar recursivamente]
     F --> G[(Retorna o melhor resultado)]
     G --> H((Fim))
-```
 
 > **Terminal** significa que o jogo acabou: ou alguém venceu, ou deu empate.
 
